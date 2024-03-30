@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Bootstrap 5.3.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="py-5 text-center" >
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="inputText" readonly style="height: 150px; width: 400px; text-align: center; border: 1px solid black; font-size: larger;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group">
+                            <button id="remove" class="button" onclick="clearDisplay()">C</button>
+                            <button class="button" onclick="deleteOne()">DEL</button>
+                            <button class="button" onclick="appendToDisplay('/')">/</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group">
+                            <button class="button" onclick="appendToDisplay('7')">7</button>
+                            <button class="button" onclick="appendToDisplay('8')">8</button>
+                            <button class="button" onclick="appendToDisplay('9')">9</button>
+                            <button class="button" onclick="appendToDisplay('*')">*</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group">
+                            <button class="button" onclick="appendToDisplay('4')">4</button>
+                            <button class="button" onclick="appendToDisplay('5')">5</button>
+                            <button class="button" onclick="appendToDisplay('6')">6</button>
+                            <button class="button "  onclick="appendToDisplay('-')">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col">
+                        <div class="btn-group "  >
+                            <button  class="button" onclick="appendToDisplay('1')">1</button>
+                            <button  class="button" onclick="appendToDisplay('2')">2</button>
+                            <button  class="button" onclick="appendToDisplay('3')">3</button>
+                            <button  class="button" onclick="appendToDisplay('+')">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group">
+                            <button class="button"  onclick="appendToDisplay('0')">0</button>
+                            <button class="button"  onclick="appendToDisplay('00')">00</button>
+                            <button class="button"  onclick="appendToDisplay('.')">.</button>
+                            <button id="calculate"  class="button" onclick="calculate('=')">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- Custom CSS -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

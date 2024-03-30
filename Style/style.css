@@ -1,0 +1,24 @@
+.button{
+    width: 100px;
+    /* padding: /20px; */
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 0px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+#remove{
+    width: 200px;
+    background: red;
+}
+
+#calculate{
+    background-color: aqua;
+}
