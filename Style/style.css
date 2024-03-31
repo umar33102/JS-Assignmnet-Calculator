@@ -1,5 +1,5 @@
 .button{
-    width: 100px;
+    width: 80px;
     /* padding: /20px; */
     height: 70px;
     border: 1px solid black;
@@ -15,7 +15,7 @@
 }
 
 #remove{
-    width: 200px;
+    width: 160px;
     background: red;
 }
 
